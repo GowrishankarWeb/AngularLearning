@@ -1,0 +1,19 @@
+<p>pipes works!</p>
+{{newVal | lowercase}}
+{{newVal | uppercase}}
+
+<p>normal date pipe : today is {{today | date}}</p>
+<p>short date pipe : today is {{today | date:'short'}}</p>
+<p>long date pipe : today is {{today | date:'long'}}</p>
+<p>fullDate pipe : today is {{today | date:'fullDate' | uppercase}}</p>
+<p>medium date pipe : today is {{today | date:'medium'}}</p>
+<p>hh:mm:ss date pipe : Time is {{today | date:'hh:mm:ss'}}</p>
+<p>full pipe : today is {{today | date:'full'}}</p>
+
+<hr><hr>
+
+<p>{{currency | currency:'EUR' : "symbol":'1.1-4'}}</p>
+
+<hr><hr>
+
+<p>{{newVal | append1234:'any text'}}</p>

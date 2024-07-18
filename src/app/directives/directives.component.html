@@ -1,0 +1,32 @@
+<p>directives works!</p>
+
+@if(isLoggedIn){
+    <p>Welcome, {{userName}}</p>
+}
+@else if (!isLoggedIn) {
+    <p>Please login</p>
+}
+@else {
+    <p>UnRecognizable value</p>
+}
+
+@for (item of items; track $index) {
+    <p>{{item}}</p>
+    @switch (item) {
+        @case ('Hi') {
+            <p>The Value is Hi</p>
+        }
+        @case ('Hello') {
+            <p>The Value is Hello</p>
+        }
+        @case ('Welcome') {
+            <p>The Value is Welcome</p>
+        }
+        @case ('Greetings') {
+            <p>The Value is Greetings</p>
+        }
+        @default {
+            <p>The Value is default</p>
+        }
+    }
+}

@@ -1,0 +1,28 @@
+<br>
+{{title}}
+<br>
+<img [src]="imageSource" [width]="imgWidth" [height]="imgHeight"/>
+<button (click)="increaseImageSize()">Increase Size of the image</button>
+<button (click)="decreaseImageSize()">Decrease Size of the image</button>
+<br>
+<div [style.backgroundColor]="bgColor">
+    <h3 [style.color]="titleColor">Title</h3>
+    <p [style]="content">Content</p>
+</div>
+
+<h2 [class.text-color]="classValue=='yes'">Oppenheimer</h2>
+<button (click)="changeRed('red')">Change Red</button>
+<button (click)="changeBlack('black')">Change Black</button>
+<h2 [style.color]="value">Click any one of the above two buttons to change color</h2>
+
+<br>
+<br>
+
+<input [(ngModel)]="inputText" placeholder="Enter Text"/>
+<p>You entered= {{inputText}}</p>
+
+<p [ngClass]="dangerClass">This is a dangerous message</p>
+<button (click)="changeToNormal()">change to normal</button>
+<button (click)="changeToDanger()">change to danger</button>
+
+<p class="danger" [ngStyle]="{'color':value}">NgStyle</p>

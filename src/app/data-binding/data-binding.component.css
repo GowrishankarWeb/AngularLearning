@@ -1,0 +1,10 @@
+.text-color{
+    color:red;
+}
+.danger{
+    color: red;
+    background-color: aliceblue;
+}
+.normal{
+    color: black;
+}
